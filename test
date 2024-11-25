@@ -1,15 +1,74 @@
 #include <stdio.h>
-#include "main.h"
-// Fonction qui affiche un message formaté
-void afficher_message(const char *nom, int age, float taille) {
-    printf("Nom : %s\n", nom);          // Affiche le nom
-    printf("Âge : %d\n", age);          // Affiche l'âge (entier)
-    printf("Taille : %.2f mètres\n", taille);  // Affiche la taille avec 2 décimales
+#include <stdarg.h>
 
+int my_printf(const char *format, ...) {
+    va_list args;
+    int printed_chars = 0;
+    const char *ptr;
+    char c;
+    char *str;
+
+    // Initialiser la liste d'arguments variable
+    va_start(args, format);
+
+    // Parcours de chaque caractère de la chaîne format
+    for (ptr = format; *ptr != '\0'; ptr++) {
+        if (*ptr == '%' && *(ptr + 1) != '\0') {
+            ptr++;  // Sauter le '%' et traiter le prochain caractère
+
+            // Traitement des spécificateurs de format
+            switch (*ptr) {
+                case 'c':  // Format pour un caractère
+                    c = va_arg(args, int);  // Récupérer le caractère
+                    putchar(c);  // Afficher le caractère
+                    printed_chars++;  // Compter le caractère imprimé
+                    break;
+
+                case 's':  // Format pour une chaîne de caractères
+                    str = va_arg(args, char *);  // Récupérer la chaîne
+                    fputs(str, stdout);  // Afficher la chaîne
+                    printed_chars += strlen(str);  // Compter les caractères imprimés
+                    break;
+
+                case '%':  // Format pour le caractère '%'
+                    putchar('%');  // Afficher '%'
+                    printed_chars++;  // Compter le caractère imprimé
+                    break;
+
+                default:
+                    // Cas de format non supporté (on affiche simplement le caractère '%')
+                    putchar('%');
+                    putchar(*ptr);  // Afficher le caractère après '%'
+                    printed_chars += 2;  // Compter les caractères imprimés
+                    break;
+            }
+        } else {
+            // Si ce n'est pas un '%', on l'affiche directement
+            putchar(*ptr);
+            printed_chars++;
+        }
+    }
+
+    // Libérer la mémoire allouée par va_start
+    va_end(args);
+
+    return printed_chars;  // Retourner le nombre de caractères imprimés
 }
 
-int main() {
-    // Appel de la fonction avec des données
-    afficher_message("Alice", 30, 1.75);
+int main(void) {
+    char c = 'A';
+    char *str = "Hello, World!";
+
+    // Utilisation de la fonction my_printf avec différents formats
+    int len = my_printf("Character: %c\n", c);
+    int len2 = my_printf("String: %s\n", str);
+    int len3 = my_printf("Percentage: %%\n");
+
+    // Affichage des longueurs de texte imprimé
+    printf("Len (Character): %d\n", len);
+    printf("Len (String): %d\n", len2);
+    printf("Len (Percentage): %d\n", len3);
+
     return 0;
 }
+

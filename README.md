@@ -16,10 +16,9 @@ To run this project, you will need to add the following environment variables to
 ## 🔗 Links
 korneevscp
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/valentin-freidel-4365502a7/)
-[![YOUTUBE ](https://img.shields.io/badge/youtube-0A66C2?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@korneevscp)
-Lucawinwin
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-windwehr-6900b013a/)
+[![linkedin](https://img.shields.io/badge/korneevscp-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/valentin-freidel-4365502a7/)
+[![YOUTUBE ](https://img.shields.io/badge/korneevscp-0A66C2?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@korneevscp)
+[![linkedin](https://img.shields.io/badge/Lucawinwin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-windwehr-6900b013a/)
 
 
 ## Authors

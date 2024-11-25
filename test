@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "main.h"
+// Fonction qui affiche un message formaté
+void afficher_message(const char *nom, int age, float taille) {
+    printf("Nom : %s\n", nom);          // Affiche le nom
+    printf("Âge : %d\n", age);          // Affiche l'âge (entier)
+    printf("Taille : %.2f mètres\n", taille);  // Affiche la taille avec 2 décimales
+
+}
+
+int main() {
+    // Appel de la fonction avec des données
+    afficher_message("Alice", 30, 1.75);
+    return 0;
+}

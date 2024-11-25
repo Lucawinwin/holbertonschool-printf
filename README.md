@@ -14,6 +14,33 @@ To run this project, you will need to add the following environment variables to
 `korneevscp`
 
 
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  git clone https://github.com/Lucawinwin/holbertonschool-printf.git
+  ls 
+  cd holbertonschool-printf
+  ./name_file.c
+```
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  editors: vi, vim, emacs
+ compiled on Ubuntu 20.04 LTS 
+
+  using gcc, -Wall -Werror -Wextra -pedantic -std=gnu89
+
+   checked using betty-style.pl and betty-doc.pl
+   ./name.c
+```
+
+
 ## Parameters
 ` The next chart explains the detailed functionality of the parameters that the function accepts, respectively with each data type. `
 
@@ -79,33 +106,6 @@ korneevscp
 ![Logo](https://cdn.discordapp.com/attachments/1294216873482653696/1310551316384452608/Capture_decran_2024-11-25_112146.png?ex=6745a186&is=67445006&hm=70a1f65834f2ea0dc6e584f4d0efeb9728ba8c79fc866af7ea73bee7156c86d0&)
 `----- DIAGRAMME -------------`
 ![Logo](https://cdn.discordapp.com/attachments/1294216873482653696/1310569527200841738/Capture_decran_2024-11-25_123459.png?ex=6745b27c&is=674460fc&hm=431037a5648efa8e4b39ad1d4108ad9eb76d8e6e73c8777013a929c24f2287ac&)
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  git clone https://github.com/Lucawinwin/holbertonschool-printf.git
-  ls 
-  cd holbertonschool-printf
-  ./name_file.c
-```
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  editors: vi, vim, emacs
- compiled on Ubuntu 20.04 LTS 
-
-  using gcc, -Wall -Werror -Wextra -pedantic -std=gnu89
-
-   checked using betty-style.pl and betty-doc.pl
-   ./name.c
-```
-
-
 ## Support
 
 For support, discord mydead2013

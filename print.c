@@ -1,5 +1,6 @@
 #include"main.h"
 #include<stdio.h>
+//* texte à rajouter
 
 int _printf(const char *format, ...);
 {

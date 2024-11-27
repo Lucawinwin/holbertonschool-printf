@@ -30,31 +30,38 @@ while (*str)
 putchar(*str++);
 count++;
 }
-} 
-else 
-{  // if the string is null
-fputs("(null)", stdout);  // Post "(null)"
-count += 6;  // "(null)" a 6 caractères
 }
-} else if (*ptr == '%') {  //Processing of specifier '%%' (percentage)
+else
+{
+
+fputs("(null)", stdout);
+
+"(null)"
+count += 6;
+
+}
+{
+else if (*ptr == '%')
+{
 putchar('%');
 count++;
 }
-} else
-{  // If it is not a '%', the character is displayed as is
+}
+else
+{
 putchar(*ptr);
 count++;
 }
 }
 
-va_end(args);  // Releasing the list of arguments
-return count;  // Returns the total number of characters printed
+va_end(args);
+return (count);
 }
 
-int main() 
+int main(void)
 {
-// Example of use
+
 int printed = _printf("Bonjour, %s! Caractère : %c, Pourcentage : %%\n", "Monde", 'A');
-printf("Nombre de caractères imprimés : %d.\n", printed); // Displays the number of characters printed
-return 0;
+printf("Nombre de caractères imprimés : %d.\n", printed);
+return (0);
 }

@@ -5,12 +5,6 @@
 #include <stdarg.h>
 #include <limits.h>
 #include <unistd.h>
-/**
-* struct format - match the conversion specifiers to args passed
-* @id: pointer to format specifer, i.e. id[0] = % and id[1] is the letter (c, s, d, i)
-* @f: pointer to function determined by the conversion specifier
-*
-*/
 typedef struct format
 {
 char *id;

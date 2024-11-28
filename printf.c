@@ -1,5 +1,7 @@
 #include"main.h"
 #include<stdio.h>
+#include"fonction.c"
+
 //* texte à rajouter
 
 int _printf(const char *format, ...);

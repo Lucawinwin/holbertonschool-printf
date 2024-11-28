@@ -103,7 +103,7 @@ korneevscp
 - [@korneevscp](https://github.com/korneevscp)
 
 
-![Logo](https://cdn.discordapp.com/attachments/1294216873482653696/1310551316384452608/Capture_decran_2024-11-25_112146.png?ex=6745a186&is=67445006&hm=70a1f65834f2ea0dc6e584f4d0efeb9728ba8c79fc866af7ea73bee7156c86d0&)
+![Logo](https://i.pinimg.com/1200x/a6/b8/45/a6b84520963b22309b85ff92a3043c54.jpg)
 `----- DIAGRAMME -------------`
 ![Logo](https://i.pinimg.com/1200x/95/f8/49/95f849484fcdd22035976be35ba27adb.jpg)
 ## Support
